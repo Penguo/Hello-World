@@ -1,4 +1,4 @@
-# extension_fun
+# Hello-World
 Repo containing all various Chrome extension projects and work
 
 **Hello World**,
