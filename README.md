@@ -1,5 +1,5 @@
 # Hello-World
-Repo containing all various Chrome extension projects and work
+The first repo created! Learning to play knifey-spoon!
 
 **Hello World**,
 
