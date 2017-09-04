@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Cue the music",
+    "description": "Cut to black, people. Wrap it up.",
+    "version": "0.1",
+    "icons": {
+        "40": "icons/larry.png",
+        "80": "icons/larry.png"
+    },
+    "browser_action": {
+        "default_icon": "icons/larry.png"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    }
+}
