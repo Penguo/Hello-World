@@ -7,6 +7,14 @@
         "40": "icons/larry.png",
         "80": "icons/larry.png"
     },
+    "commands": {
+        "toggleMuzak": {
+            "suggested_key": {
+                "mac": "Ctrl+Shift+8"
+            },
+            "description": "Play the music from anywhere"
+        }
+    },
     "browser_action": {
         "default_icon": "icons/larry.png"
     },
@@ -16,6 +24,7 @@
     "background": {
         "scripts": [
             "background.js"
-        ]
+        ],
+        "persistent": true
     }
 }
