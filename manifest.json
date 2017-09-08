@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Cue the music",
     "description": "Cut to black, people. Wrap it up.",
-    "version": "0.1",
+    "version": "0.2",
     "icons": {
         "40": "icons/larry.png",
         "80": "icons/larry.png"
