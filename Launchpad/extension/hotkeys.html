@@ -1,0 +1,27 @@
+<!--hotkeys.html is loaded by jQuery into the main body-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Chartboost Support">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="hotkeys" class="center-body">
+            <div id="hotkey-space">
+                <p>Enter a web address to be saved to a hotkey:</p>
+                <input id="hotkey-url" maxlength=999 name="hotkey-url" type="url" placeholder="http://..." required/>
+                <button id="go-hotkeys">SAVE</button>
+            </div>
+            <span id="hotkey-ready" style="display:none">Now press a key or key-combination...</span>
+            <ul id="hotkey-instructions" style="display:none;font-size:80%:">Saved! Usage: 
+                <li>In Omnibox:  \ + TAB + KEY</li>
+                <li>with Launchpad Open:   \ + KEY</li>
+                <li>&nbsp;</li>
+            </ul>
+        </div>
+    </body>
+</html>

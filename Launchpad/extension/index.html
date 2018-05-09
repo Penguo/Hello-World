@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Epic LiveOps">
+
+        <title>Epic LiveOps Launchpad</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        <script type="text/javascript" src="js/remarkable.min.js"></script>
+        <script type="text/javascript" src="js/showdown.min.js"></script>
+        <script type="text/javascript" src="js/autolink-min.js"></script>
+        <script type="text/javascript" src="js/autolinkjira.js"></script>
+        <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/bootbox.min.js"></script>
+        <script type="text/javascript" src="js/crypto-js.js"></script>
+        <script type="text/javascript" src="js/client.js"></script>
+
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                        <div class="navbar-header">
+                            <a href="#" title="Extensions"><img src="icons/icon32.png" alt="Epic Logo" height="32" width="32" id="logo"></a>
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                            </button><a class="navbar-brand" title="Home" href="#"><h2>Launchpad</h2></a>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a href="#" class="prompt" id="login-prompt">Login</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings<strong class="caret"></strong></a>
+                                    <ul class="dropdown-menu">
+                                        <li id="hotkeys-dropdown">
+                                            <a href="#" class="hotkeys-button">Hotkeys</a>
+                                        <li class="divider">
+                                        </li>
+                                        <li id="separated-link">
+                                            <a href="http://thecatapi.com/api/images/get?format=src&type=gif" target="_blank">Magic</a>
+                                        </li>
+                                        <li id="about-dropdown">
+                                            <a href="#" class="about-button">About</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class = "world-time"><h6>
+                                    UTC: <span style="float:right;" id="utc"></span><br>
+                                    Cary: <span style="float:right;" id="est"></span><br>
+                                    Seattle: <span style="float:right;" id="pst"></span><br>
+<!--                                     Hong Kong: <span style="float:right;" id="utc"></span><br>
+ -->                                </li></h6>
+                            </ul>
+                        </div>
+
+                    </nav>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4 class="text-left">
+                                <b>&nbsp</b>
+                            </h4>
+                        </div>
+                        <div class="col-md-8">
+                            <span class="h4 center-title">Status Updates</span>
+                            <span id="filter-on-teams">
+                                <span class="filter" id="filter-all" style="margin-left:20px;">All</span>
+                            </span>
+                            <span class="h4 pictos float-right" id="reload-status">1</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="panel-group" id="panel-677713">
+                                <!--BEGIN Template Builder Example -->
+                                <!--
+                                <div class="panel panel-default">
+                                    <div class="panel-heading pointer" data-toggle="collapse" href="#panel-element-JIRA">
+                                         <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-JIRA" href="#panel-element-JIRA">JIRA</a>
+                                    </div>
+                                    <div id="panel-element-JIRA" class="panel-collapse collapse">
+                                        <div class="panel-body panel-jira">
+                                                <div id="create-foo-bar" class="button">CREATE Foo(bar)</div>
+                                                <div id="get-foo-bar" class="button">GET Foo(bar)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading jira-button pointer" data-toggle="collapse" href="#panel-element-JIRA">
+                                         <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-JIRA" href="#panel-element-JIRA">JIRA</a>
+                                    </div>
+                                    <div id="panel-element-JIRA" class="panel-collapse collapse">
+                                        <div class="panel-body panel-jira">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading pointer" data-toggle="collapse" href="#panel-element-CONFLUENCE">
+                                         <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-CONFLUENCE" href="#panel-element-CONFLUENCE">Wiki</a>
+                                    </div>
+                                    <div id="panel-element-CONFLUENCE" class="panel-collapse collapse">
+                                        <div class="panel-body panel-confluence">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading github-button pointer" data-toggle="collapse" href="#panel-element-GITHUB">
+                                         <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-GITHUB" href="#panel-element-GITHUB">GitHub</a>
+                                    </div>
+                                    <div id="panel-element-GITHUB" class="panel-collapse collapse">
+                                        <div class="panel-body panel-github">
+                                            <a href="https://gist.github.com/" target="_" class="button btn btn-default">Create Gist</a>
+                                            <a href="https://github.ol.epicgames.net/LiveOps" target="_blank" class="button btn btn-default github-button">LiveOps Repo</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading pointer" data-toggle="collapse" href="#panel-element-TOOLS">
+                                         <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-TOOLS" href="#panel-element-TOOLS">Tools</a>
+                                    </div>
+                                    <div id="panel-element-TOOLS" class="panel-collapse collapse">
+                                        <div class="panel-body panel-TOOLS">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading pointer" data-toggle="collapse" href="#panel-element-DATA">
+                                        <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-DATA" href="#panel-element-DATA">Analytics</a>
+                                    </div>
+                                    <div id="panel-element-DATA" class="panel-collapse collapse">
+                                        <div class="panel-body panel-DATA">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-md-8">
+                        <div class="panel panel-default main-body-panel">
+                            <div class="panel-heading panel-status">
+                                <h6 class="panel-title panel-status">
+                                    {Offline}
+                                </h6>
+                            </div>
+                            <div class="panel-body">
+                                <li>Make sure you're online!</li>
+                            </div>
+                            <div class="panel-footer">
+                                <a href=#Comment>Comment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/moment-tz.min.js"></script>
+    <script type="text/javascript" src="js/moment-range.js"></script>
+    <script type="text/javascript" src="js/timer.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/findEventHandlers.js"></script>
+</html>

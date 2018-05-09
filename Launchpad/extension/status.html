@@ -1,0 +1,30 @@
+<!--status.html is loaded by jQuery into the main body-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Epic LiveOps">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="status" class="settings" style="height:window.innerHeight-145;">
+            <ul id="statuses" style="height:window.innerHeight-200;">
+            </ul>
+            <div id="submit-status" style="display:none;">
+
+                <div><span class="status-field"></span> 
+                    <textarea autofocus="autofocus" name="status-body" id="status-body" rows="8" style="width:95%" placeholder="What did you do today? Detailed or not, anything is good."></textarea>
+                </div> 
+                <span id="go-journal" class="button">SEND</span>
+            </div>
+            <div id="send-new" class="button">Add New</div>
+            <div class="float-right smaller bold markdown-formatted hidden">
+                Markdown formatted? <input type="checkbox" id="is-status-markdown" />
+            </div>
+        </div>
+    </body>
+</html>

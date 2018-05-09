@@ -1,0 +1,36 @@
+{
+    "name": "Epic Launchpad",
+    "description": "Epic LiveOps Launchpad",
+    "version": "1.1.0",
+    "manifest_version": 2,
+    "background": {
+        "scripts": ["js/jquery-2.1.4.js", "js/eventPage.js"],
+        "persistent": true
+    },
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "content_security_policy": "script-src 'self' https://apis.google.com; object-src 'self'; frame-ancestors chrome-extension://;",
+    "omnibox": { "keyword" : "\\" },
+    "icons": {
+        "128": "icons/icon128.png"
+    },
+    "web_accessible_resources": [
+        "icons/icon48.png"
+    ],
+    "permissions": [
+       "tabs",
+       "geolocation", 
+       "management", 
+       "unlimitedStorage", 
+       "storage", 
+       "<all_urls>",
+       "https://*/",
+       "notifications",
+       "clipboardWrite",
+       "cookies",
+       "alarms",
+       "identity"
+       // "*://support-tools-dmz-e1a-001.caffeine.io/*"
+    ]
+}

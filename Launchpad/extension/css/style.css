@@ -1,0 +1,619 @@
+html {
+    background-color: #363f48;
+}
+
+body {
+    background-color: #363f48;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: #EFEFEF;
+}
+
+@font-face {
+    font-family: 'Pictos';
+    src: url('./css/font/pictos-web.eot');
+    src: local('?'), url('./font/pictos-web.woff') format('woff'), url('./font/pictos-web.ttf') format('truetype'), url('./font/pictos-web.svg#webfontIyfZbseF') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.whosout-panel {
+    margin-top: 20px;
+}
+
+.whosout-date {
+    font-size: 12px;
+}
+
+.whosout-people {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-size: 11px;
+    color: white;
+}
+
+.panel-whosout {
+    width: 200px;
+    margin-left: -20px;
+}
+
+.panel-element-whosout {
+    width: 200px;
+    margin-left: -20px;
+}
+
+.hidden-data {
+    display: none;
+}
+
+#reload-status {
+    cursor: pointer;
+}
+
+.center-title{
+    display: inline-block;
+    margin-top: 4px;
+}
+
+.pictos {
+    font-family: 'Pictos';
+}
+
+.button {
+    background-color: #363f48;
+    border: none;
+    color: #899cb1;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+    margin: 3px 0px;
+    cursor: pointer;
+    display: block;
+}
+
+.slackbot-button {
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 10px;
+}
+
+.button:hover {
+    color: #25BBEC;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2), 0 3px 15px 0 rgba(0,0,0,0.19);
+}
+
+#logo {
+    margin: 17px 5px 10px -5px;
+    float: right;
+}
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 0px 10px;
+    font-size: 18px;
+    line-height: 20px
+}
+
+.world-time>h6 {
+    color: yellow;
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 1.8px;
+    margin-left: 15px;
+    margin-right: 30px;
+    text-align: left;
+}
+
+.modal-content {
+    background: #363f48;
+}
+
+.bootbox-body {
+    font-size: 16px;
+    background: #363f48;
+}
+
+#hotkeys {
+    margin: 30px;
+}
+
+#ticketOverview_settings {
+    margin: 30px;
+}
+
+.ticket-setting-entry {
+    line-height: 2;
+}
+
+.search-button {
+    margin-top: -5px;
+}
+
+.panel-jira, .panel-zendesk, .panel-confluence {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.panel-favorites {
+    width: 200px;
+    margin-left: -20px;
+}
+
+.panel-ticket_overview {
+    width: 200px;
+    margin-left: -20px;
+}
+
+.panel-favorites.panel-element-FAVORITEACCOUNTS {
+    width: 200px;
+    margin-left: -20px;
+}
+
+.panel-favorites.panel-element-ticket_overview {
+    width: 200px;
+    margin-left: -20px;
+}
+
+.panel-body.account-names {
+    margin-left: -35px;
+}
+
+.panel-body.ticket_overview-names {
+    margin-left: -7px;
+}
+
+.account-name {
+    margin:2px;
+    padding:2px;
+    float: left;
+    cursor: pointer;
+    width: 85%;
+    font-size: 11.5px;
+}
+
+.ticket_overview-name {
+    margin:2px;
+    padding:2px;
+    float: left;
+    cursor: pointer;
+    width: 85%;
+    font-size: 11.5px;
+}
+
+#accounts::-webkit-scrollbar {
+    display: none;
+}
+
+#accounts li {
+    height: 12px;
+}
+
+#accounts-list {
+    /*  display: inline-block;*/
+    line-height: 1;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#ticket_overview-list {
+    /*  display: inline-block;*/
+    line-height: 1;
+}
+
+.save-star-not-saved {
+    text-shadow: 0px 0px 3px rgba(150, 150, 150, 1);
+    text-align: center;
+    color: black;
+    font-size: 11px;
+}
+
+.save-star-saved {
+    text-shadow: 0px 0px 3px rgba(150, 150, 150, 1);
+    text-align: center;
+    color: yellow;
+    font-size: 11px;
+}
+
+.select-check-not-saved {
+    text-shadow: 0px 0px 3px rgba(150, 150, 150, 1);
+    color: black;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.select-check-saved {
+    text-shadow: 0px 0px 3px rgba(150, 150, 150, 1);
+    color: green;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.favorites-star {
+    padding:2px;
+    margin:2px;
+    float: right;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.status-content-div {
+    float:left;
+    width: 85%;
+}
+
+.status-content-div p {
+    padding: 0px;
+}
+
+.status-content-div li {
+    list-style-type: disc;
+    border: 0px;
+    padding: 1px;
+}
+.status-content-div ul {
+    border: 0px;
+    padding: 0px;
+}
+
+.status-comments {
+    margin-left: 20px;
+}
+
+.status-comments div {
+    padding: 8px 0px;
+    border-top: solid #363f48;
+    border-top-width: 2px;
+}
+.status-username {
+    color: #e3ebf3;
+    font-size: 120%;
+}
+
+.status-comment-username {
+    color: cyan;
+    padding-left: 4px;
+}
+
+.time-ago {
+    color: darkgrey;
+}
+
+#status{
+    /*max-height: 80%;*/
+}
+
+#statuses {
+    /*height: 550px;*/
+    /*max-height: 900px;*/
+    /*overflow-y: hidden;*/
+    overflow-x: hidden;
+    -webkit-user-select: text;
+    color: white;
+    padding-right: 10px;
+    margin-left: -30px;
+}
+
+.button#send-new {
+    margin: 10px 200px;
+    padding: 10px;
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    -webkit-box-shadow: inset 0px 0px 1px 0px rgba(255,255,255,1);
+}
+
+#status-body {
+    margin: 5px 20px 5px 20px;
+    border: 4px;
+    border-style: solid;
+    width: auto;
+}
+
+#go-journal {
+    text-align: center;
+    display:block;
+}
+
+.button#go-journal  {
+    margin: 10px 200px;
+    padding: 10px;
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    -webkit-box-shadow: inset 0px 0px 1px 0px rgba(255,255,255,1);
+}
+
+.post-text {
+    font-size: 100%;
+    font-weight: 200;
+    letter-spacing: 1px;
+    width: 100%;
+    padding: 12px 1px 20px 20px;
+}
+
+.post-text a {
+    text-decoration: underline;
+}
+
+.markdown-formatted {
+    margin-right:32px;
+    margin-top:-50px;
+}
+
+
+
+#statuses li {
+    border-top: 1px solid #cccccc;
+    display: inline-block;
+    width: 100%;
+}
+
+#statuses li div ul li {
+    border-top: 0px solid #cccccc;
+    min-height: 12px;
+}
+
+#statuses li div ul li:before {
+    content: "\25B8  ";
+}
+
+#statuses li div ol li {
+    border-top: 0px solid #cccccc;
+    min-height: 12px;
+    list-style-type: lower-alpha;
+    display: list-item;
+    margin: 15px;
+}
+
+#statuses li:first-child {
+    border-top: none !important;
+}
+#statuses li:last-child {
+    border-bottom: none !important;
+}
+.unread {
+/*  background: rgba(204, 255, 255, 0.6); */
+    -webkit-box-shadow: inset 0px 0px 1px 1px yellow;
+}
+
+.comment-input {
+    width: 90%;
+    color: black;
+    margin-left: 25px;
+}
+
+.post-text code {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 90%;
+    background-color: darkslategrey;
+}
+
+.zendesk-button-off {
+    background: #363f48;
+}
+.zendesk-button-on {
+    background: #363f48;
+}
+
+#zendesk-view {
+    max-width: 850px;
+}
+
+#zendesk-view li {
+    width: 150px;
+    height: 150px;
+    border: 5px ridge rgb(145,183,91);
+    font-size: 24px;
+    float: left;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+#zendesk-view h5 {
+    text-align: center;
+    margin: 0px;
+    overflow: hidden;
+    max-height: 49px;
+}
+
+.zendesk-view-count {
+    width: 100%;
+    text-align: center;
+    font-size: 90px;
+}
+
+.pad-right {
+    padding-right: 0px;
+}
+
+.status-name-div {
+    width: 10%;
+    overflow: hidden;
+}
+
+.middle {
+    text-align: center;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+.float-right {
+    float:right;
+}
+.float-left {
+    float:left;
+}
+
+.third {
+    /*width: 33%;*/
+    height: 100%;
+}
+
+.head-font {
+    color:white;
+    font-weight:bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.smaller {
+    font-size: 90%;
+}
+
+.small-font {
+    font-size: 60%;
+}
+
+.padded {
+    margin: 5px 0px;
+}
+
+.bigger {
+    font-size: 120%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.clear {
+    clear:both;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.float-left {
+    float: left;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.filter {
+    display:inline-block;
+    margin: 0px 5px;
+    font-size: 90%;
+}
+
+.filter:hover {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.filter.bold {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    overflow: auto;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    overflow: auto;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    background: #899cb1;
+}
+
+body {
+    line-height: 1.3;
+}
+
+#results_container, #debug_container, #additional_container, #tab-container, #tab-list {
+    margin-top:10px;
+    display:none;
+}
+
+#results_container, #debug_container, #additional_container, #tab-container, #tab-list {
+    margin-top:10px;
+    display:none;
+}
+
+/*Bootstrap rules for collapsing HUE_queries divs*/
+.panel-heading .accordion-toggle:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\2212";
+    float: right;
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    content: "\002b";
+}
+
+/*Overwrite margin set in bootstrap of the panel-group*/
+#accordion {
+  margin-bottom: 2px;
+}
+
+/* Headers in href tags not inheriting hover rules, so added explicitly */
+a:hover {
+    color: #25BBEC;
+}
+
+#confluence-articles-table {
+    padding: 2px;
+}
+
+.btn-update,.btn-dismiss {
+    background: #363f48;
+    padding: 2px 10px 2px 10px;
+    margin: 5px;
+    margin-left: -10px;
+}
+
+#updatedJiraTable {
+  table-layout: fixed;
+  width: 100%;
+  padding: 5px;
+}
+#updatedJiraTable th:nth-child(1),
+#updatedJiraTable td:nth-child(1) {
+  width: 15%;
+  padding: 5px;
+}
+#updatedJiraTable th:nth-child(2),
+#updatedJiraTable td:nth-child(2) {
+  width: 50%;
+  padding: 5px;
+}
+#updatedJiraTable th:nth-child(3),
+#updatedJiraTable td:nth-child(3) {
+  width: 10%;
+  text-align: center;
+  padding: 5px;
+}
+#updatedJiraTable th:nth-child(4),
+#updatedJiraTable td:nth-child(4) {
+  width: 25%;
+  overflow: auto;
+  padding: 5px;
+  white-space: nowrap;
+}
